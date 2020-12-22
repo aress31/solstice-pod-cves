@@ -179,14 +179,14 @@ An attacker suitably positioned to view a legitimate user's network traffic coul
 
 <figure>
     <img alt="administrator's password interception" src="images/screen_key.png" title="Packets capture showing the screen key being intercepted." />
-    <figcaption align="middle">Packets capture showing the administrator password being intercepted – the administrator password is transmitted hashed using the SHA1 algorithm.</figcaption>
+    <figcaption>Packets capture showing the administrator password being intercepted – the administrator password is transmitted hashed using the SHA1 algorithm.</figcaption>
 </figure>
 
 - Packets capture showing the screen key being intercepted:
 
 <figure>
     <img alt="screen key interception" src="images/screen_key.png" title="Packets capture showing the screen key being intercepted." />
-    <figcaption align="middle">Packets capture showing the screen key being intercepted.</figcaption>
+    <figcaption>Packets capture showing the screen key being intercepted.</figcaption>
 </figure>
 
 ### References
