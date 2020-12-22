@@ -20,7 +20,7 @@ _Note: Some of these vulnerabilities are explotiable on later version of the fir
 
 ### Affected versions
 
-All version of Mersive Solstice Pods running a firmware version prior to **3.3.0 // May 2018 || 4.3 (15966) // November 2019** as acknowledged on the vendor website.
+All version of Mersive Solstice Pods running a firmware version prior to **3.3.0 // May 2018 || 4.3 (15966) // November 2019** as acknowledged on the [vendor website](https://documentation.mersive.com/content/pages/release-notes.htm).
 
 ```
 3.3.0 // May 2018
@@ -75,7 +75,7 @@ Vendor Change Log:
 
 ### Affected versions
 
-All version of Mersive Solstice Pods running a firmware version prior to **3.3.0 // May 2018 || 4.3 (15966) // November 2019** as acknowledged on the vendor website.
+All version of Mersive Solstice Pods running a firmware version prior to **3.3.0 // May 2018 || 4.3 (15966) // November 2019** as acknowledged on the [vendor website](https://documentation.mersive.com/content/pages/release-notes.htm).
 
 ```
 3.3.0 // May 2018
@@ -179,14 +179,14 @@ An attacker suitably positioned to view a legitimate user's network traffic coul
 
 <figure>
     <img alt="administrator's password interception" src="images/screen_key.png" title="Packets capture showing the screen key being intercepted." />
-    <figcaption>Packets capture showing the administrator password being intercepted – the administrator password is transmitted hashed using the SHA1 algorithm.</figcaption>
+    <figcaption align="middle">Packets capture showing the administrator password being intercepted – the administrator password is transmitted hashed using the SHA1 algorithm.</figcaption>
 </figure>
 
 - Packets capture showing the screen key being intercepted:
 
 <figure>
     <img alt="screen key interception" src="images/screen_key.png" title="Packets capture showing the screen key being intercepted." />
-    <figcaption>Packets capture showing the screen key being intercepted.</figcaption>
+    <figcaption align="middle">Packets capture showing the screen key being intercepted.</figcaption>
 </figure>
 
 ### References
