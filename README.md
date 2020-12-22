@@ -4,13 +4,13 @@
 
 Alexandre Teyar has identified the following high-severity vulnerabilities in Mersive Solstice Pods – a wireless collaboration and presentation platform designed by [Mersive Technologies Inc.](https://www.mersive.com/uk/):
 
-| CVE                                                                             | Description                                                                                                                                                       | CVSS Base Score |
-| ------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- |
-| [CVE-2017-12945](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-12945) | [(Remote) (authenticated) (blind) OS command injection vulnerability](https://github.com/aress31/cve-2017-12945)                                                  | 8.8             |
-| [CVE-2020-35584](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-35584) | [Unencrypted communications posing risks of "Man-in-the-Middle" (MitM) attacks](<#Unencrypted-communications-posing-risks-of-"Man-in-the-Middle"-(MitM)-attacks>) | N/A             |
-| [CVE-2020-35585](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-35585) | [Insufficient anti-enumeration mechanisms for Screen Key](#Insufficient-anti-enumeration-mechanisms-for-Screen-Key)                                               | N/A             |
-| [CVE-2020-35586](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-35586) | [Insufficient anti-enumeration mechanisms for Adminsitrator Password](#Insufficient-anti-enumeration-mechanisms-for-Administrator-Password)                       | N/A             |
-| [CVE-2020-35587](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-35584) | [Lack of binary code obfuscation](#Lack-of-binary-code-obfuscation)                                                                                               | N/A             |
+| CVE                                                                             | Description                                                                                                                                                       | CVSS Base Score | CVSS Vector                                  |
+| ------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | -------------------------------------------- |
+| [CVE-2017-12945](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-12945) | [(Remote) (authenticated) (blind) OS command injection vulnerability](https://github.com/aress31/cve-2017-12945)                                                  | 8.8             | CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H |
+| [CVE-2020-35584](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-35584) | [Unencrypted communications posing risks of "Man-in-the-Middle" (MitM) attacks](<#Unencrypted-communications-posing-risks-of-"Man-in-the-Middle"-(MitM)-attacks>) | N/A             | N/A                                          |
+| [CVE-2020-35585](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-35585) | [Insufficient anti-enumeration mechanisms for Screen Key](#Insufficient-anti-enumeration-mechanisms-for-Screen-Key)                                               | N/A             | N/A                                          |
+| [CVE-2020-35586](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-35586) | [Insufficient anti-enumeration mechanisms for Adminsitrator Password](#Insufficient-anti-enumeration-mechanisms-for-Administrator-Password)                       | N/A             | N/A                                          |
+| [CVE-2020-35587](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-35584) | [Lack of binary code obfuscation](#Lack-of-binary-code-obfuscation)                                                                                               | N/A             | N/A                                          |
 
 These vulnerabilities have been validated on a device running the version 3.0.3 of the firmware.
 
@@ -170,7 +170,7 @@ The web application allowing Solstice pods’ users to configure them and to use
 
 <p align="center">
     <img alt="config.html" src="images/config.png" title="Login portal at http://192.168.0.103/Config/config.html" />
-     <span style="display: block; text-align: center;">Login portal using HTTP.</span>
+    <figcaption align="middle">Login portal using HTTP.</figcaption>
 </p>
 
 An attacker suitably positioned to view a legitimate user's network traffic could record and monitor their interactions with the web application to obtain any information the user supplies, this could include **administrator passwords** and **screen keys**, as shown in the screenshots below.
@@ -179,14 +179,14 @@ An attacker suitably positioned to view a legitimate user's network traffic coul
 
 <p align="center">
     <img alt="administrator's password interception" src="images/screen_key.png" title="Packets capture showing the screen key being intercepted." />
-     <span style="display: block; text-align: center;">Packets capture showing the administrator password being intercepted – the administrator password is transmitted hashed using the SHA1 algorithm.</span>
+    <figcaption align="middle">Packets capture showing the administrator password being intercepted – the administrator password is transmitted hashed using the SHA1 algorithm.</figcaption>
 </p>
 
 - Packets capture showing the screen key being intercepted:
 
 <p align="center">
     <img alt="screen key interception" src="images/screen_key.png" title="Packets capture showing the screen key being intercepted." />
-     <span style="display: block; text-align: center;">Packets capture showing the screen key being intercepted.</span>
+    <figcaption align="middle">Packets capture showing the screen key being intercepted.</figcaption>
 </p>
 
 ### References
