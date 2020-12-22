@@ -168,26 +168,26 @@ _Note: Later versions of the firmware are likely to still be vulnerable to this 
 
 The web application allowing Solstice pods’ users to configure them and to use the `Browser Look-in` feature uses an unencrypted protocol, namely `HTTP` as shown in the following screenshot.
 
-<p align="center">
+<figure>
     <img alt="config.html" src="images/config.png" title="Login portal at http://192.168.0.103/Config/config.html" />
-    <figcaption align="middle">Login portal using HTTP.</figcaption>
-</p>
+    <figcaption>Login portal using HTTP.</figcaption>
+</figure>
 
 An attacker suitably positioned to view a legitimate user's network traffic could record and monitor their interactions with the web application to obtain any information the user supplies, this could include **administrator passwords** and **screen keys**, as shown in the screenshots below.
 
 - Packets capture showing the administrator password being intercepted – the administrator password is transmitted hashed using the `SHA1` algorithm from firmware version 3.0.3:
 
-<p align="center">
+<figure>
     <img alt="administrator's password interception" src="images/screen_key.png" title="Packets capture showing the screen key being intercepted." />
-    <figcaption align="middle">Packets capture showing the administrator password being intercepted – the administrator password is transmitted hashed using the SHA1 algorithm.</figcaption>
-</p>
+    <figcaption>Packets capture showing the administrator password being intercepted – the administrator password is transmitted hashed using the SHA1 algorithm.</figcaption>
+</figure>
 
 - Packets capture showing the screen key being intercepted:
 
-<p align="center">
+<figure>
     <img alt="screen key interception" src="images/screen_key.png" title="Packets capture showing the screen key being intercepted." />
-    <figcaption align="middle">Packets capture showing the screen key being intercepted.</figcaption>
-</p>
+    <figcaption>Packets capture showing the screen key being intercepted.</figcaption>
+</figure>
 
 ### References
 
