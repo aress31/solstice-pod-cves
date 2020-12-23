@@ -16,7 +16,7 @@ These vulnerabilities have been validated on a device running the version 3.0.3 
 
 _Note: Some of these vulnerabilities are explotiable on later version of the firmware, see details for each vulnerabilities._
 
-## Insufficient anti-enumeration mechanisms for Adminitrator Password
+## Insufficient anti-enumeration mechanisms for Administrator Password
 
 ### Affected versions
 
