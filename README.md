@@ -150,7 +150,7 @@ An attacker could, for instance:
 
 Mitre CVE Reference:
 
-- https://cve.mitre.org/cgi-bin/cvename.cgi?name=2017-12945
+- https://cve.mitre.org/cgi-bin/cvename.cgi?name=2020-35587
 
 Vendor Change Log:
 
