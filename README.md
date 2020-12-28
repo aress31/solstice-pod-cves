@@ -2,7 +2,7 @@
 
 ## Multiple CVEs for Solstice Pod from Mersive Technologies Inc.
 
-Alexandre Teyar has identified the following high-severity vulnerabilities in Mersive Solstice Pods – a wireless collaboration and presentation platform designed by [Mersive Technologies Inc.](https://www.mersive.com/uk/):
+Alexandre Teyar has identified the following high and medium severity vulnerabilities in Mersive Solstice Pods – a wireless collaboration and presentation platform designed by [Mersive Technologies Inc.](https://www.mersive.com/uk/):
 
 | CVE                                                                             | Description                                                                                                                                                       | CVSS Base Score | CVSS Vector                                  |
 | ------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | -------------------------------------------- |
